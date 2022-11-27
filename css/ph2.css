@@ -1,0 +1,84 @@
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: transparent;
+    margin: 0%;
+}
+
+#logo{
+ margin: 10px 36px;
+}
+
+#logo img{
+    height: 70px;
+    border-radius: 35px;
+}
+
+#navbar ul{
+    margin: 0 25%;
+    display: flex;
+}
+#navbar ul li{
+    justify-items: center;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 20px;
+    text-decoration:solid;
+    color:white;
+    border-radius: 20px;
+
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1; 
+    opacity: 0.4;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    margin-bottom: 95px;
+    text-decoration: solid;
+    font-weight: bolder;
+}
+
+#home::before{
+    content: "";
+    /* background: url('/img/spacebg.jpg') center; */
+    background-repeat: no-repeat;
+    background-size:cover;   position: absolute;
+    width: 100%;
+    height: 100%;
+     z-index: -1; /*isse navbar vagera aage aa jate hai */
+    /* opacity: 0.4; */
+    padding: 3px;
+}
+
+#home p{
+    color: rgb(255, 255, 255);
+    font-size: xxx-large;
+    text-align: center;
+    -webkit-text-stroke: 1px  rgb(255, 255, 255) ;
+    text-shadow: 3px 3px black;
+    margin: 20% 0 0 0;
+}
